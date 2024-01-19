@@ -1,5 +1,6 @@
 package in.uddesh.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +11,7 @@ import in.uddesh.repositories.CounselloreServiceRepo;
 @Controller
 public class CounselloreController {
 	
+	@Autowired
 	private CounselloreServiceRepo crepo;
 	
 	@GetMapping("/registration")
